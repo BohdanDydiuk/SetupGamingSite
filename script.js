@@ -1,4 +1,3 @@
-document.querySelector('button').addEventListener('click', () => {
-    alert('Bouton cliqué !');
-  });
-  
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Bienvenue sur Setup Gaming et Tech !");
+});
