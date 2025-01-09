@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un setup - Setup Gaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Créer votre setup</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="create-setup.html">Créer un setup</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="creator">
+            <h2>Créer votre setup</h2>
+            <form id="setup-form">
+                <section class="name">
+                    <label for="component-name">Nom du composant :</label>
+                    <input type="text" id="component-name" placeholder="Ex : Carte graphique, écran..." required>
+                </section>
+                <section class="detailed-name">
+                    <label for="component-detailed-name">Serie du composant :</label>
+                    <input type="text" id="component-detailed-name" placeholder="Ex : RTX 4090..." required>
+                </section>
+                <section class="price">
+                    <label for="component-price">Prix (€) :</label>
+                    <input type="number" id="component-price" placeholder="Ex : 250" required>
+                </section>
+                <button type="submit">Ajouter au setup</button>
+            </form>
+
+            <h3>Votre setup :</h3>
+            <ul id="setup-list"></ul>
+            <p id="total-cost">Coût total : 0€</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Setup Gaming</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
