@@ -7,36 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur Setup Gaming</h1>
-        <nav>
+    <header class="header-main">
+        <img onclick="location.href='index.html'" class="logo-img" src="img/logo-technest.png" alt="logo">
+        <nav class="navigation">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="create-setup.html">Créer un setup</a></li>
-                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="create-setup.html">Build your own</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>À propos</h2>
-            <p>Concevez, optimisez et partagez vos setups gaming ou multitâches. Explorez des idées et trouvez de l'inspiration !</p>
-        </section>
-
-        <section>
-            <h2>Fonctionnalités principales</h2>
-            <ul>
-                <li>Créer et gérer vos setups.</li>
-                <li>Parcourir la galerie communautaire.</li>
-                <li>Lire des articles et des conseils gaming.</li>
-            </ul>
-        </section>
+        <div class="video-main">
+            <video autoplay loop muted playsinline>
+                <source src="videos/946146-hd_1920_1080_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-main1">
+                <p class="text1">Build your own setup</p>
+                <button class="text-button1">Try</button>
+            </div>
+        </div>
+        <div class="galery-image"> 
+            <img class="image-main1" src="img/Gaming-setup1.webp" alt="image">
+            <div class="text-main2">
+                <p class="text2">Discover our gallery</p>
+                <button class="text-button2">Discover</button>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Setup Gaming</p>
+        <p>&copy; 2025 TechNest.com</p>
     </footer>
 </body>
 </html>

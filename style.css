@@ -1,17 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Rock Salt', cursive;
+}
+
+body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #000;
     color: #333;
 }
 
-header {
-    background: #444;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+.header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparence pour laisser voir le contenu en dessous */
+    color: white;
+    z-index: 1000;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 64px;
 }
 
 header nav ul {
@@ -34,9 +48,132 @@ main section{
 }
 
 footer {
-    background: #444;
+    background: #010019;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+.logo-img {
+    max-height: 60px; 
+    cursor: pointer; 
+    transition: transform 0.7s ease-in-out;
+}
+
+.logo-img:hover {
+    transform: rotate(360deg);
+}
+
+.navigation ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    text-decoration: none; 
+    color: #969696; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+.navigation a:hover {
+    color: #007bff; 
+}
+
+.video-main {
+    position: relative;
+    width: 1263px;
+}
+
+.video-main video {
+    width: 1263px; /* La vidéo s'adapte à la largeur du conteneur */
+    height: 600px; /* La vidéo couvre toute la hauteur du conteneur */
+    object-fit: cover; /* Cela garantit que la vidéo remplit tout le conteneur sans distorsion */
+}
+
+.video-main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.9); /* Ajuste l'intensité du filtre */
+    pointer-events: none;
+    z-index: 10; /* Assure que le filtre est au-dessus de la vidéo */
+}
+
+.text-main1 {
+    position: absolute;
+    top: 50%; /* Centré verticalement */
+    left: 50%; /* Centré horizontalement */
+    transform: translate(-50%, -50%); /* Centre le texte complètement */
+    color: white; /* Texte blanc pour contraster avec la vidéo */
+    text-align: center; /* Centre le texte */
+    z-index: 100; /* Assure que le texte est au-dessus de la vidéo */
+}
+
+.text1 {
+    color: wheat;
+    font-size: 50px;
+}
+
+.text-button1 {
+    font-size: 25px;
+    padding: 0px 30px;
+    background-color: #f5deb3;
+    color: #000;
+    border-radius: 40px;
+}
+
+.text-button1:hover {
+    background-color: #867a64;
+}
+
+.image-main1 {
+    margin: 0;
+    padding: 0;
+    width: 1263px;
+}
+
+.galery-image::after {
+    content: '';
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    height: 710px;
+    background: rgba(0, 0, 0, 0.6); /* Ajuste l'intensité du filtre */
+    pointer-events: none;
+    z-index: 100; /* Assure que le filtre est au-dessus de la vidéo */
+}
+
+.text-main2 {
+    position: absolute;
+    top: 160%; /* Centré verticalement */
+    left: 50%; /* Centré horizontalement */
+    transform: translate(-50%, -50%); /* Centre le texte complètement */
+    color: white; /* Texte blanc pour contraster avec la vidéo */
+    text-align: center; /* Centre le texte */
+    z-index: 200; /* Assure que le texte est au-dessus de la vidéo */
+}
+
+.text2 {
+    color: wheat;
+    font-size: 50px;
+}
+
+.text-button2 {
+    font-size: 25px;
+    padding: 0px 30px;
+    background-color: #f5deb3;
+    color: #000;
+    border-radius: 40px;
+}
+
+.text-button2:hover {
+    background-color: #867a64;
 }
