@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000;
-    color: #333;
+    color: #f5deb3;
 }
 
 .header-main {
@@ -17,7 +17,6 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7); /* Transparence pour laisser voir le contenu en dessous */
-    color: white;
     z-index: 1000;
     width: 98%;
     display: flex;
@@ -39,16 +38,12 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
     text-decoration: none;
 }
 
-main section{
-    margin-left: 30px;
-}
 
 footer {
-    background: #010019;
+    background: #000000;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -74,13 +69,13 @@ footer {
 
 .navigation a {
     text-decoration: none; 
-    color: #969696; 
+    color: #f5deb3; 
     font-weight: bold; 
     transition: color 0.3s; 
 }
 
 .navigation a:hover {
-    color: #007bff; 
+    color: #867a64; 
 }
 
 .video-main {
@@ -127,6 +122,7 @@ footer {
     background-color: #f5deb3;
     color: #000;
     border-radius: 40px;
+    border: 1px solid black;
 }
 
 .text-button1:hover {
@@ -172,8 +168,55 @@ footer {
     background-color: #f5deb3;
     color: #000;
     border-radius: 40px;
+    border: 1px solid black;
 }
 
 .text-button2:hover {
     background-color: #867a64;
 }
+
+.image-main2 {
+    width: 1263px;
+}
+
+.blog-image::after {
+    content: '';
+    position: absolute;
+    top: 225%;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.6); /* Ajuste l'intensité du filtre */
+    pointer-events: none;
+    z-index: 300; /* Assure que le filtre est au-dessus de la vidéo */
+}
+
+.text-main3 {
+    position: absolute;
+    top: 290%; /* Centré verticalement */
+    left: 50%; /* Centré horizontalement */
+    transform: translate(-50%, -50%); /* Centre le texte complètement */
+    color: white; /* Texte blanc pour contraster avec la vidéo */
+    text-align: center; /* Centre le texte */
+    z-index: 400; /* Assure que le texte est au-dessus de la vidéo */
+}
+
+.text3 {
+    color: wheat;
+    font-size: 50px;
+}
+
+.text-button3 {
+    font-size: 25px;
+    padding: 0px 30px;
+    background-color: #f5deb3;
+    color: #000;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+.text-button3:hover {
+    background-color: #867a64;
+}
+
+
