@@ -7,46 +7,91 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Créer votre setup</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="create-setup.html">Créer un setup</a></li>
-                <li><a href="gallery.html">Galerie</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header class="header-main">
+            <img onclick="location.href='index.html'" class="logo-img" src="img/logo-technest-two-tone.png" alt="logo">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="create-setup.html">Build your own</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section id="creator">
-            <h2>Créer votre setup</h2>
-            <form id="setup-form">
-                <section class="name">
-                    <label for="component-name">Nom du composant :</label>
-                    <input type="text" id="component-name" placeholder="Ex : Carte graphique, écran..." required>
-                </section>
-                <section class="detailed-name">
-                    <label for="component-detailed-name">Serie du composant :</label>
-                    <input type="text" id="component-detailed-name" placeholder="Ex : RTX 4090..." required>
-                </section>
-                <section class="price">
-                    <label for="component-price">Prix (€) :</label>
-                    <input type="number" id="component-price" placeholder="Ex : 250" required>
-                </section>
-                <button type="submit">Ajouter au setup</button>
-            </form>
+        <main>
+            <div class="pc-image1">
+                <img class="image-create1" src="img/pc1.png" alt="image">
+                <div class="text-create1">
+                    <p class="create-text1"> Build your own pc </p>
+                    <div class="text-create-secondary1">
+                        <p class="expain-text-create1"> With this tool , you can create your own pc with the components you want. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-image2">
+                <img class="image-create2" src="img/pc2.jpg" alt="image">
+                <div class="text-create2">
+                    <p class="create-text2">Select options</p>
+                    <div class="text-create-secondary2">
+                        <p class="expain-text-create2">Now, you can select the options you want for your pc. </p>
+                    </div>
+                    <p class="create-text2">↓</p>
+                </div>
+            </div>
+            <div class="section1">
+                <h2>Choisis un fabricant de carte graphique :</h2>
+                <div class="button-group1" id="gpu">
+                    <button class="button" data-value="Nvidia">Nvidia</button>
+                    <button class="button" data-value="AMD">AMD</button>
+                    <button class="button" data-value="Intel">Intel</button>
+                </div>
+                <div class="dynamic-list-container" id="dynamic-list-container-gpu">
+                    <h3>Liste des modèles disponibles (GPU) :</h3>
+                    <div class="dynamic-list" id="dynamic-list-gpu"></div>
+                    <div id="product-image-container">
+                        <img id="product-image" src="" alt="Image du produit" style="display:none; width: 200px;">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section2">
+                <h2>Choisis un fabricant de processeur :</h2>
+                <div class="button-group2" id="cpu">
+                    <button class="button" data-value="AMD">AMD</button>
+                    <button class="button" data-value="Intel">Intel</button>
+                </div>
+                <div class="dynamic-list-container" id="dynamic-list-container-cpu">
+                    <h3>Liste des modèles disponibles (CPU) :</h3>
+                    <div class="dynamic-list" id="dynamic-list-cpu"></div>
+                </div>
+            </div>
+            
+            <div class="section3">
+                <h2>Choisis la quantité de RAM :</h2>
+                <div class="button-group3" id="ram">
+                    <button class="button" data-value="8GB">8 Go</button>
+                    <button class="button" data-value="16GB">16 Go</button>
+                    <button class="button" data-value="32GB">32 Go</button>
+                    <button class="button" data-value="64GB">64 Go</button>
+                </div>
+                <div class="dynamic-list-container" id="dynamic-list-container-ram">
+                    <h3>Liste des modèles disponibles (RAM) :</h3>
+                    <div class="dynamic-list" id="dynamic-list-ram"></div>
+                </div>
+            </div>
+                        
+            <div id="results">
+                <h2>Résultat :</h2>
+                <p>Prix estimé : <span id="price">-</span></p>
+                <p>Consommation estimée : <span id="wattage">-</span></p>
+            </div>
 
-            <h3>Votre setup :</h3>
-            <ul id="setup-list"></ul>
-            <p id="total-cost">Coût total : 0€</p>
-        </section>
-    </main>
+        </main>
 
-    <footer>
-        <p>&copy; 2025 Setup Gaming</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 TechNest.com. All rights reserved</p>
+        </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
