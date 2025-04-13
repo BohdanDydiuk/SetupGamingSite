@@ -114,16 +114,20 @@ footer {
 }
 
 .text-button1 {
-    font-size: 25px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
     padding: 0px 30px;
     background-color: #f5deb3;
     color: #000;
     border-radius: 40px;
     border: 1px solid black;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
 .text-button1:hover {
+    transform: scale(1.08);
     background-color: #867a64;
+
 }
 
 .image-main1 {
@@ -160,15 +164,18 @@ footer {
 }
 
 .text-button2 {
-    font-size: 25px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
     padding: 0px 30px;
     background-color: #f5deb3;
     color: #000;
     border-radius: 40px;
     border: 1px solid black;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
 .text-button2:hover {
+    transform: scale(1.08);
     background-color: #867a64;
 }
 
@@ -204,15 +211,18 @@ footer {
 }
 
 .text-button3 {
-    font-size: 25px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
     padding: 0px 30px;
     background-color: #f5deb3;
     color: #000;
     border-radius: 40px;
     border: 1px solid black;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
 .text-button3:hover {
+    transform: scale(1.08);
     background-color: #867a64;
 }
 
@@ -291,6 +301,27 @@ footer {
     text-align: center;
 }
 
+.section4 {
+    padding: 20px;
+    text-align: center;
+}
+
+.section5 {
+    padding: 20px;
+    text-align: center;
+}
+
+.section6 {
+    padding: 20px;
+    text-align: center;
+}
+
+.section7 {
+    padding: 20px;
+    text-align: center;
+}
+
+
 .button-group1 {
     display: flex;
     justify-content: center;
@@ -358,6 +389,102 @@ footer {
 }
 
 .button-group3 button:hover {
+    transform: scale(1.05);
+    background-color: #867a64;
+    color: #000;
+}
+
+.button-group4 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.button-group4 button {
+    padding: 75px 90px;
+    font-size: 28px;
+    background-color: #000;
+    color: #f5deb3;
+    border: 2px solid #ccc;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button-group4 button:hover {
+    transform: scale(1.05);
+    background-color: #867a64;
+    color: #000;
+}
+
+.button-group5 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.button-group5 button {
+    padding: 75px 90px;
+    font-size: 28px;
+    background-color: #000;
+    color: #f5deb3;
+    border: 2px solid #ccc;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button-group5 button:hover {
+    transform: scale(1.05);
+    background-color: #867a64;
+    color: #000;
+}
+
+.button-group6 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.button-group6 button {
+    padding: 75px 90px;
+    font-size: 28px;
+    background-color: #000;
+    color: #f5deb3;
+    border: 2px solid #ccc;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button-group6 button:hover {
+    transform: scale(1.05);
+    background-color: #867a64;
+    color: #000;
+}
+
+.button-group7 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.button-group7 button {
+    padding: 75px 90px;
+    font-size: 28px;
+    background-color: #000;
+    color: #f5deb3;
+    border: 2px solid #ccc;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button-group7 button:hover {
     transform: scale(1.05);
     background-color: #867a64;
     color: #000;
