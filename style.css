@@ -127,7 +127,6 @@ footer {
 .text-button1:hover {
     transform: scale(1.08);
     background-color: #867a64;
-
 }
 
 .image-main1 {
@@ -317,6 +316,8 @@ footer {
 }
 
 .section7 {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     text-align: center;
 }
