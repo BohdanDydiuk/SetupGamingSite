@@ -123,6 +123,30 @@ footer {
     font-size: 50px;
 }
 
+.text-secondary1{
+    transition: all 0.3s ease;
+}
+
+.text-secondary1:hover{
+    transform: scale(1.15);
+}
+
+.text-secondary2{
+    transition: all 0.3s ease;
+}
+
+.text-secondary2:hover{
+    transform: scale(1.15);
+}
+
+.text-secondary3{
+    transition: all 0.3s ease;
+}
+
+.text-secondary3:hover{
+    transform: scale(1.15);
+}
+
 .text-button1 {
     font-family: 'Rock Salt', cursive;
     font-size: 20px;
@@ -260,6 +284,14 @@ footer {
 .create-text1 {
     color: wheat;
     font-size: 50px;
+}
+
+.text-create-secondary1{
+    transition: all 0.3s ease;
+}
+
+.text-create-secondary1:hover{
+    transform: scale(1.15);
 }
 
 .image-create2 {
