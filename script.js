@@ -348,30 +348,35 @@ function handleButtonClick(event) {
 function updateResults() {
     let totalPrice = 0;
     let totalWattage = 0;
-    let incompleteSelection = false;
 
-    for (const [component, manufacturer] of Object.entries(userSelection)) {
-        if (manufacturer) {
-            const base = componentPrices[component][manufacturer];
-            // Si un modèle a été sélectionné, utiliser ses valeurs
-            if (userModelSelection[component]) {
-                totalPrice += userModelSelection[component].price;
-                totalWattage += userModelSelection[component].wattage;
-            } else {
-                totalPrice += base.price;
-                totalWattage += base.wattage;
-                incompleteSelection = true; // le choix du modèle n'est pas encore fait
-            }
+    const requiredComponents = [
+        "gpu", "cpu", "ram", "cooling", "storage",
+        "motherboard", "alimentation"
+    ];
+
+    let allSelected = true;
+
+    for (const component of requiredComponents) {
+        const selectedModel = userModelSelection[component];
+
+        if (selectedModel) {
+            totalPrice += selectedModel.price || 0;
+            totalWattage += selectedModel.wattage || 0;
         } else {
-            incompleteSelection = true;
+            allSelected = false;
         }
     }
 
-    // Mettre à jour l'interface
+    const pasteCheckbox = document.querySelector(".checkbox-paste");
+    if (pasteCheckbox.checked) {
+        totalPrice += 6;
+        totalWattage += 2; // Valeur symbolique pour pâte thermique
+    }
+
     const priceElement = document.getElementById("price");
     const wattageElement = document.getElementById("wattage");
 
-    if (incompleteSelection) {
+    if (!allSelected) {
         priceElement.textContent = "Veuillez compléter la sélection.";
         wattageElement.textContent = "-";
     } else {
@@ -379,6 +384,7 @@ function updateResults() {
         wattageElement.textContent = `${totalWattage} W`;
     }
 }
+
 
 // Afficher dynamiquement la liste des modèles pour un groupe donné
 function displayModels(group, value) {
@@ -458,3 +464,8 @@ document.querySelectorAll(".button").forEach((button) => {
 });
 
 
+console.log("Sélections fabricants:", userSelection);
+console.log("Sélections modèles:", userModelSelection);
+console.log("Prix total:", totalPrice);
+console.log("Consommation totale:", totalWattage);
+console.log("Sélection incomplète ?", incompleteSelection);

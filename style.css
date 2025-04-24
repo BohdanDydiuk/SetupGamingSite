@@ -9,7 +9,7 @@ body {
     font-family: 'Rock Salt', cursive;
 }
 
-.header-main {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,7 +19,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     padding: 0px 20px;
     height: 64px;
 }
@@ -60,7 +59,6 @@ footer {
 .navigation ul {
     display: flex; 
     list-style: none; 
-    margin: 0;
     padding: 0;
 }
 
@@ -72,6 +70,18 @@ footer {
 }
 
 .navigation a:hover {
+    color: #867a64; 
+}
+
+.home-button {
+    text-decoration: none; 
+    color: #f5deb3; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+    margin-right: 60%;
+}
+
+.home-button:hover {
     color: #867a64; 
 }
 
@@ -239,9 +249,8 @@ footer {
 
 .text-create1 {
     position: absolute;
-    top: 50%; 
-    left: 25%; 
-    transform: translate(-50%, -50%); 
+    top: 25%; 
+    left: 10%; 
     color: white; 
     text-align: center; 
     z-index: 400; 
@@ -255,6 +264,10 @@ footer {
 
 .image-create2 {
     width: 1262px;
+}
+
+.image-create1{
+    margin-left: 50%;
 }
 
 .pc-image2::after {
@@ -325,6 +338,7 @@ footer {
 
 .button-group1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -349,6 +363,7 @@ footer {
 
 .button-group2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -373,6 +388,7 @@ footer {
 
 .button-group3 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -397,6 +413,7 @@ footer {
 
 .button-group4 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -421,6 +438,7 @@ footer {
 
 .button-group5 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -445,6 +463,7 @@ footer {
 
 .button-group6 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -469,6 +488,7 @@ footer {
 
 .button-group7 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -503,6 +523,11 @@ footer {
     border-radius: 8px;
     text-align: center;
 }
+
+.checkbox-paste  {
+    width: 30px;
+}
+
 
 .dynamic-list-container {
     display: none;
@@ -558,4 +583,91 @@ footer {
 .dynamic-list button.selected {
     background-color: #4caf50;
     color: rgb(255, 255, 255);
+}
+
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 20px 0px 20px;
+    width: 96%;
+}
+
+.images{
+    display: flex;
+}
+
+.gallery-images{
+    max-width: 380px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: transform 0.2s ease;
+}
+
+.gallery-images:hover{
+    transform: scale(1.03);
+}
+
+.text-gallery1{
+    display: flex;
+    margin: 60px 0px 50px 30%;
+}
+
+.text-gallery2{
+    display: flex;
+    margin: 40px 0px 50px 22%;
+}
+
+.main-div{
+    margin: 100px 30px 0px 30px;
+}
+
+.blog-messages{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+}
+
+.blog-main-text-div{
+    text-align: center;
+    width: 800px;
+    margin-left: 18%;
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-main-text{
+    font-size: 27px;
+    text-decoration: underline;
+}
+
+.blog-responce{
+    box-shadow: 4px 4px 4px white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 600px;
+    margin: 50px 20px 10px 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.blog-responce:hover{
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+
+.blog-responce h4{
+    color: wheat;
+}
+.blog-responce p{
+    margin-left: 10px;
+}
+
+.blog-responce-person{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
